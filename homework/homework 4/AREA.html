@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area</title>
+</head>
+<body>
+    <h1 style="text-align: center;color: rebeccapurple;">Пример работы тега area</h1>
+    <p style="font-size: large;color: rebeccapurple; text-align: left;">Каждый элемент area определяет активные области изображения, которые являются ссылками. Рисунок с привязанными 
+        к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, 
+        но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Тег area задает форму области, 
+        ее размеры, устанавливает адрес документа, на который следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать документ. 
+        Этот тег всегда располагается в контейнере map, который связывает координаты областей с изображением.</p>
+    <div style="text-align: center;">
+        <img src="area.jpg" height="400px" width="600px" usemap="#emotions">
+        <map name="emotions">
+         <area shape="rect"
+         coords="0px,0px,200px,200px"
+         href="https://ru.wikipedia.org/wiki/Гнев"
+         target="area1"
+         title="гнев"
+         alt="gnev"/>
+
+         <area shape="rect"
+         coords="0px,400px,200px,200px"
+         href="https://podskazki.info/zadumchivost/"
+         target="area2"
+         title="задумчивость"
+         alt="zadymchivost"/>
+
+        <area shape="rect"
+         coords="200px,0px,400px,200px"
+         href="https://ru.wikipedia.org/wiki/Испуг"
+         target="area3"
+         title="испуг"
+         alt="ispug"/>    
+
+         <area shape="rect"
+         coords="200px,200px,400px,400px"
+         href=" https://zen.yandex.ru/media/id/5d2f0b8be854a900ac3e1612/spokoistvie-vse-o-emocii-5d58a2b635c8d800af6fbe82"
+         target="area4"
+         title="спокойствие"
+         alt="spokoistvie"/> 
+
+         <area shape="rect"
+         coords="400px,0px,600px,200px"
+         href=" https://ru.wikipedia.org/wiki/Скука"
+         target="area5"
+         title="скука"
+         alt="skuka"/> 
+
+         <area shape="rect"
+         coords="400px,200px,600px,400px"
+         href=" https://ru.wikipedia.org/wiki/Радость"
+         target="area6"
+         title="радость"
+         alt="radost"/> 
+
+        </map>
+    </div>
+   <h2>Для запоминания! </h2> 
+   <p> 
+Набор координат определяется формой «горячей области», которая задается атрибутом shape. 
+Отсчёт координат обычно ведётся от левого верхнего угла изображения и указывается в пикселях.
+
+Для прямоугольника (shape="rect") определяется четыре координаты — X1, Y1, X2, Y2, как показано на рис. 1.
+</p>
+<img src="tag_area_rect.png">
+<p> <a href="https://hcdev.ru/html/area/"  target="area7">Подробно по ссылке </a></p>
+
+</body>
+</html>
