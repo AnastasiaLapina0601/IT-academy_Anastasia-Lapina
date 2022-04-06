@@ -1,0 +1,15 @@
+div{
+    background: 
+    url(ramka_pieces/left_top.png) left top no-repeat, 
+    url(ramka_pieces/right_top.png) right top no-repeat,
+    url(ramka_pieces/left_bottom.png) left bottom no-repeat,
+    url(ramka_pieces/right_bottom.png) right bottom no-repeat,
+    url(ramka_pieces/top_bottom_center.png) top center repeat-x,
+    url(ramka_pieces/center_bottom.png) bottom center repeat-x,
+    url(ramka_pieces/left_right_center.png) left center repeat-y,
+    url(ramka_pieces/right_center.png) right center repeat-y; 
+    margin-bottom: 0px; 
+    text-align: center;
+    font-family: 'Amatic SC';
+    font-size:30px;
+}

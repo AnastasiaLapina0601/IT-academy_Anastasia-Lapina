@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&family=Balsamiq+Sans:wght@700&family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style_area.css">
+<title>Area</title>
+</head>
+<body>
+    <div>
+    <h1>Tag Area</h1>
+    <p>Тег <area> (от англ. area - область) определяет активные области изображения, которые являются ссылками.
+
+        Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Элемент <area> задаёт форму области, её размеры, устанавливает адрес документа, на который следует сделать ссылку. <area> всегда располагается в контейнере <map>, который связывает координаты областей с изображением.
+        
+        Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.</p>
+        <p>Приведем пример ниже:</p>
+        <img src="vremena_goda.jpg" alt="primer" width="1000px" height="800px" usemap="#11"> 
+        <map name="11">
+            <area
+            shape="rect"
+            coords="0px,0px,500px,400px"
+            href="https://ru.wikipedia.org/wiki/Зима" target="1"
+            alt="Zima"
+            title="Zima"
+            style="cursor:cell"
+            > </area>
+            <area
+            shape="rect"
+            coords="500px,0px,1000px,400px"
+            href="https://ru.wikipedia.org/wiki/Весна" target="2"
+            alt="Vesna"
+            title="Vesna"
+            style="cursor:default"> </area>
+            <area
+            shape="rect"
+            coords="0px,400px,500px,800px"
+            href="https://ru.wikipedia.org/wiki/Лето" target="3"
+            title="Leto"
+            alt="Leto"> </area>
+            <area
+            shape="rect"
+            coords="500px,400px,1000px,800px"
+            href="https://ru.wikipedia.org/wiki/Осень" target="4"
+            alt="Osen"
+            title="Osen"
+            style="cursor:wait"></area>
+        </map>
+        <p style="white-space: pre;">
+            В теге <img> необхоидмо указать usemap=#Значение
+            Далее прописываем 
+            Teg area
+            shape=rect, circle, poly-многоугольник
+            coords- коодинаты, в зависимости от фигуры.
+            href="https://ru.wikipedia.org/wiki/Весна" target="2" - ссылка 
+            alt="Vesna"
+            title 
+            <img src="cursor/primer.PNG" alt="primer_kod">
+        </p>
+    </div>
+</body>
+</html>
