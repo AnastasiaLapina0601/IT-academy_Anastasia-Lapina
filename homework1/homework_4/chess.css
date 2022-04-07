@@ -1,0 +1,15 @@
+.a{
+    font-size: 24px;
+    font-weight: bold;
+}
+.b{
+    color: green;
+}
+.c{
+    color: red;
+    font-weight: bold;
+}
+.d{
+    font-style: italic;
+    color: blue;
+}
