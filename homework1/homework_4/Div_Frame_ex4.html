@@ -9,14 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style_ex4.css">
    <style>
-       div{ background: url('ramka_pieces/ramka.png') no-repeat center center;
-       -webkit-background-size: 100%;}
+       div{ border: 100px solid;
+    
+         -moz-border-image: url(ramka_pieces/ramka.png) 100 repeat repeat;
+            -webkit-border-image:url(ramka_pieces/ramka.png) 100 repeat repeat;
+            -o-border-image: url(ramka_pieces/ramka.png) 100 repeat repeat;
+            border-image: url(ramka_pieces/ramka.png) 100 repeat repeat;
+       }
    </style>
     <title>Div_Frame_exercise 4.3</title>
 </head>
 <body>
     
-    <div style="padding: 150px;"> <h1>Что такое космос</h1>
+    <div> <h1>Что такое космос</h1>
         <p>Под космосом подразумевается пустое пространство во Вселенной, находящееся за пределами планетарных атмосфер. В нем присутствуют частицы водорода, кислорода и пыли, 
     правда их концентрация очень мала и составляет лишь несколько молекул на кубический метр. 
         <p>Также в некоторых участках межзвездной среды могут встречаться электромагнитное излучение и космические лучи. 
