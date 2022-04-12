@@ -25,6 +25,7 @@ h2{
 .d{
     padding: 0px 20px 0px 20px;
     background: url(ball.png) right top repeat-y;
+    background-size: 60px;
 }
 h3{
     padding-left: 20px;
