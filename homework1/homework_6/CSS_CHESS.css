@@ -1,0 +1,22 @@
+tr:first-of-type{
+    height: 25px;
+    background-color: #90EE90;
+}
+tr:last-of-type{
+    height: 25px;
+    background-color: #90EE90;
+}
+tr:nth-child(even) td:nth-child(odd){
+    background-color: black;
+}
+tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
+}
+td:first-child{
+    width: 25px;
+    background-color: #90EE90;
+}
+td:last-child{
+    width: 25px;
+    background-color: #90EE90;
+}
