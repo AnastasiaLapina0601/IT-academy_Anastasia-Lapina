@@ -1,0 +1,30 @@
+.a{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+.b{
+    color: green;
+}
+.c{
+    color: red;
+    font-weight: bold;
+}
+.d{
+    font-style: italic;
+    color: blue;
+}
+
+[href]{
+    text-decoration-line: none;
+    font-weight: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p [href*="#start"]
+{
+    margin-top: 24px;
+    display: inline-block;
+}

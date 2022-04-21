@@ -1,0 +1,60 @@
+div{
+   
+    border: 2px solid;
+    text-align: center;
+    padding: 15px 0 15px 0;
+   
+}
+div a{
+    color: green;
+    font-size: 30px;
+}
+div a:hover{
+    color: red;
+}
+div.first a:nth-child(-n+4)::after{
+content: '|';
+margin: 0 15px 0 15px;
+font-weight: bold;
+color: red;
+font-size: 40px;
+}
+div.second, div.third,div.fourth, div.fifth{
+   margin-top: 20px;
+   
+   
+}
+
+div.second a:nth-child(n+2)::before{
+    content: '|';
+    margin: 0 15px 0 15px;
+    font-weight: bold;
+    color: red;
+    font-size: 40px;
+    }
+    div.third a{
+        border-right: solid red;
+        padding: 0 15px 0 15px;
+            }
+            div.third a:last-child{
+                border-right: none;
+                    }
+
+ div.fourth a:nth-child(even){
+    margin: 0 15px 0 15px;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+ }
+ div.fifth table{
+     display: inline-table;
+     text-align: center;
+     border-collapse: collapse;}
+     
+     div.fifth table td:nth-child(-n+4)::after{
+        content: '|';
+        margin: 0 15px 0 15px;
+       font-size: 40px;
+       font-weight: bold;
+        color: red;
+     }
