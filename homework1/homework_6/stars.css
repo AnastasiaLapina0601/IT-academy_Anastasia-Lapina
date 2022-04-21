@@ -7,3 +7,6 @@ div img:hover{
 div img:hover~img{
     content: url(star1.png);
     }
+div{
+    float: left;
+}
