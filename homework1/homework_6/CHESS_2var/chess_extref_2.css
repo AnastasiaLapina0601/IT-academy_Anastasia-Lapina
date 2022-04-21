@@ -28,3 +28,8 @@ p [href*="#start"]
     margin-top: 24px;
     display: inline-block;
 }
+.info{
+    background: url(extref.png) no-repeat left center;
+    padding-left: 15px;
+    
+}
