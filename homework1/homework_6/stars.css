@@ -1,0 +1,9 @@
+div img{
+        float: right;
+}
+div img:hover{
+    content: url(star1.png);
+    }
+div img:hover~img{
+    content: url(star1.png);
+    }
