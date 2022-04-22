@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teg_Picture</title>
+    <style>
+        div.text{
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: bisque;
+            border: solid 5px pink;
+        }
+        div.text ul li{
+           list-style-type: none;
+        }
+        span{
+            font-weight: bold;
+        }
+        div.examples{ text-align: center;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color:lightblue;
+            border: solid 5px royalblue;
+            
+        }
+               img{
+            width: 100px;
+        }
+       .columbia img{
+            width: 600px;
+                   }
+                   .columbia picture img{
+                    width: 300px;
+                   }   
+    </style>
+</head>
+<body>
+   <div class="text"> <h1>Новое решение:тег picture</h1>
+        <p>
+            Он реализует способ описания адаптивных изображений таким же способом, как это делается в audio и video. 
+                Таким образом можно размещать несколько тегов source, каждый из которых содержит имена файлов различных 
+                изображений вместе с условиями, при которых те должны быть загружены.</p>
+                <p>
+               <span> Это позволит загружать разные изображения в зависимости от:</span>
+               <ul> 
+                <li>Результатов media выражений, например высоты, ширины или ориентации видимой области</li> 
+               <li>Плотности пикселей</li> 
+            </ul>
+            <span> Это в свою очередь означает, что вы можете:</span>
+            <ul>
+
+              <li>  Загружать файлы изображений соответствующего размера, эффективно используя пропускную способность.</li>
+              <li>  Загружать по-разному ориентированные изображения в разных пропорциях для того, чтобы соответствовать изменениям в макете при разных ширинах.</li>
+              <li>  Загружать изображения с высоким разрешением для дисплеев с повышенной плотностью пикселей.</li>
+</ul>
+        </p>
+    </div>
+    <div class="examples">
+        <h2>Пример</h2>
+        <p> Есть логотип компании Columbia.
+ При отображении на устройствах, ширина которых превышает 500px - отображается полная картинка-
+ <img src="columbia_big.jpg" alt="col_big">
+ В случае, если ширина устройства менее 500рх - ее сокращенный вариант-
+ <img src="columbia_small.jpg" alt="col_small">
+ </p>
+ <p>Наглядно можно увидеть ниже: </p>
+   </div>
+   <div class="columbia">
+ <picture>
+         <source srcset="columbia_small.jpg" media="(max-width: 500px)">
+         <img srcset="columbia_big.jpg" alt="col_big1">
+     </picture>
+     <p style="border-top: solid 5px black;">
+     <img src="ex_1.PNG" alt="ex_1">
+     <img src="ex_2.PNG" alt="ex_2">
+ </p>
+
+    </div>
+</body>
+</html>
