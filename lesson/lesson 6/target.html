@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-.Ski#ski:target{content: url(ski-flex.jpg);
-
+div{
+    display: none;
 }
+div:target{
+    display: block;
+}
+
     </style>
 </head>
 <body>
-    <a href="#ski" class="Ski">Ski</a> <a href="#smileys" class="Smileys">Smileys</a><a href="#green" class="Green">Green</a>
+  <a href="#ski">ski</a> <a href="#smileys">smileys</a> <a href="#color">color</a>
+
+   <div class="ski" id="ski"> <img src="ski-flex.jpg" alt=""></div>
+   <div class="smileys" id="smileys"> <img src="smileys.png" alt=""></div>
+   <div class="color" id="color"> <img src="rightblock.PNG" alt=""></div>
+   
 </body>
 </html>
