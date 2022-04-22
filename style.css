@@ -22,10 +22,16 @@ summary{
     font-weight: bold;
     margin:10px auto 0 px auto;
 }
+summary:hover{
+    font-size:45px;
+}
 a{
     text-decoration:none; 
     color: black; 
     font-size:25px;
+}
+a:hover{
+    font-size:35px;
 }
 div{
     padding-bottom: 30px;

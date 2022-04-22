@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teg_Picture</title>
     <style>
+        a{
+            text-decoration-line: none;
+            color: red;
+        }
+        a:hover{
+            color: white;
+        }
         div.text{
             text-align: center;
             font-size: 24px;
@@ -13,7 +20,7 @@
             background-color: bisque;
             border: solid 5px pink;
         }
-        div.text ul li{
+         li{
            list-style-type: none;
         }
         span{
@@ -35,10 +42,24 @@
                    .columbia picture img{
                     width: 300px;
                    }   
+                   div.gucci{
+                    text-align: center;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color:khaki;
+            border: solid 5px yellow;
+                   }
+                   div.gucci img{
+                       width: 45px;
+                   }
+                   div.gucci_example picture img{
+                       width: 400px;
+                      
+                   }
     </style>
 </head>
 <body>
-   <div class="text"> <h1>Новое решение:тег picture</h1>
+   <div class="text"> <h1>Новое решение:тег <a href="https://webdesign.tutsplus.com/ru/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015" target="1.1">picture</a> </h1>
         <p>
             Он реализует способ описания адаптивных изображений таким же способом, как это делается в audio и video. 
                 Таким образом можно размещать несколько тегов source, каждый из которых содержит имена файлов различных 
@@ -73,11 +94,27 @@
          <source srcset="columbia_small.jpg" media="(max-width: 500px)">
          <img srcset="columbia_big.jpg" alt="col_big1">
      </picture>
-     <p style="border-top: solid 5px black;">
+     <p style="border: solid 5px black;">
      <img src="ex_1.PNG" alt="ex_1">
      <img src="ex_2.PNG" alt="ex_2">
  </p>
+    </div>
+    <div class="gucci">
+ Приведем еще один пример, в данном случае лого будет разным при трех различных ширинах экрана
+ <ul>
+     <li>1.до 500рх <img src="gucci_logo_small.png" alt="gucci_small"> </li>
+     <li>2.501-900рх <img src="gucci_logo_medium.jpg" alt="gucci_medium"> </li>
+     <li>3.свыше 900рх <img src="Gucci_logo_big.jpg" alt="gucci_big">  </li>
+ </ul>
 
     </div>
+<div class="gucci_example"> 
+    <picture>
+        <source srcset="gucci_logo_small.png" media="(max-width: 500px)">
+        <source srcset="gucci_logo_medium.jpg" media="(min-width: 501px) and (max-width: 900px)">
+        <img srcset="Gucci_logo_big.jpg" alt="gucci_big">
+    </picture>
+</div>
+
 </body>
 </html>
