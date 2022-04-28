@@ -4,13 +4,8 @@
         color: blue;
         font-weight: bold;
     }
-    .info [href$="botvinnik.shtml"]::after{
- content: 'на https://chesspro.ru/statistic/botvinnik.shtml';
+    .info a[href^="https://"]::after{
+        content: 'на ' attr(href);
     }
-    .info [href$="karpov.shtml"]::after{
-        content: 'на https://chesspro.ru/statistic/karpov.shtml';
-    }
-    .info [href$="kasparov.shtml"]::after{
-        content: 'на https://chesspro.ru/statistic/kasparov.shtml';
-    }
+   
 }
