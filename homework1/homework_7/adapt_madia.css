@@ -1,0 +1,80 @@
+@media all and (max-width:1238px){
+    .menu{
+        height: 700px;
+    }
+}
+@media all and (max-width:1046px){
+    .content img{
+        width: 100%;
+         float: none;
+    }
+    .content{
+        background: none;
+    }
+    .menu{
+        height: 1200px;
+    }
+}
+@media all and (max-width:900px){
+    .header, .footer{
+        font-size: 20px; 
+    }
+
+}
+@media all and (max-width:800px){
+    .menu{
+        width: 100%;
+        height: 100px;
+    }
+    .menu h3{
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+    }
+    .menu ul li{
+        display: inline;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .menu ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .content{
+        margin-left: 0px;
+    }
+    p{
+        font-size: 15px;
+    }
+    h2{
+        text-align: center;
+        font-variant: normal;
+        margin: 0;
+        padding: 10px;
+        font-size: 17px;
+    }
+    .content img{
+        width: 40%;
+        float: left;
+        margin-right: 15px;
+    }
+    .content{
+      
+        background: url(../homework_5/ball.png) right top repeat-y;
+        background-size: 30px;
+        
+    }
+    
+}
+@media all and (max-width:630px){
+    .menu h3{
+        font-size: 12px;
+    }
+    .menu ul li{
+        font-size: 10px;
+        margin: 0px;
+    }
+    .header, .footer{
+        font-size: 15px;
+    }
+}

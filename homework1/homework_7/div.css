@@ -1,0 +1,42 @@
+.header, .footer{
+    background-color: #ADD8E6; 
+    font-size: 30px; 
+    font-variant: normal;
+    padding: 15px;
+    text-align: center;
+    color: #0000FF;
+    clear: both;
+}
+.menu{
+    float: left;
+    width: 200px;
+    font-size: 20px;
+    vertical-align: top;
+    background-color: #f0e68c;
+}
+.content img{
+    width: 300px;
+    float: left;
+    margin-right: 15px;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    font-variant: normal;
+    margin: 0;
+    padding: 10px;
+}
+
+.content{
+    margin-left: 210px;
+    background: url(../homework_5/ball.png) right top repeat-y;
+    background-size: 60px;
+    
+}
+.content::after{
+    content:'';
+    display: block;
+    clear: both;
+}
