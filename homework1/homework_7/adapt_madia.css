@@ -78,3 +78,15 @@
         font-size: 15px;
     }
 }
+@media all and (max-width:410px){
+    .menu h3{
+        font-size: 11px;
+    }
+    .menu ul li{
+        font-size: 9px;
+        margin: 0px;
+    }
+    .header, .footer{
+        font-size: 13px;
+    }
+}
