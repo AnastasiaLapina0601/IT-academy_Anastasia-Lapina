@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+li{
+list-style-type: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.clerfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 1256px;
+   
+}
+.header{
+    background-color: #141414;;
+}
+.header h6{
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+.header h6 a{
+    color:#1977DA ;
+}
+.search{
+background:
+rgba(196, 196, 196, 0.2);
+}
+.search .logo li{
+    float: left;
+}
+.search .logo li img{
+    margin: 7px 5px 5px 68px;
+    height: 60px;
+}
+.search .logo li p{
+    margin: 27px auto 20px auto;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.01em;
+}
+.search .search_brends{
+background: #FFFFFF;
+border-radius: 31px;
+}
+.search .search_brends{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.01em;
+color: #000000;
+opacity: 0.5;
+margin: 21px 67px 11px 45px;
+float: left;
+}
+.search .search_brends p{
+    padding: 9px 249px 9px 27px;
+}
+.search .search_brends p img{
+    padding-right: 12px;
+    }
+
+
+.search .account li{
+    float: left;
+        margin-top: 32px;
+        font-style: normal;
+   font-weight: 400;
+font-size: 14px;}
+.search .account li:nth-child(2){
+    margin-left: 8px;
+    margin-right: 17px;
+   }
+   .search .account li:nth-child(3)::after{
+       content: url('../images/more.png');
+       margin-left: 8px;
+       display: inline-block;
+       position: relative; top: -2px;
+    
+   }
+   .search .account li:nth-child(4)::after{
+    content: url('../images/more.png');
+    margin-left: 8px;
+    display: inline-block;
+    position: relative; top: -2px;
+ 
+}
+    
+   
+.search .account li:nth-child(4){
+    margin-left: 20px;
+    margin-right: 40px;
+   }
