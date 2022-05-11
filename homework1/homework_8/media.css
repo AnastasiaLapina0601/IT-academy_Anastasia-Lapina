@@ -1,0 +1,17 @@
+@media all and (max-width:380px){
+    div.A{
+        margin-left: 0px;
+      }
+      select{
+        margin-left: 0px;
+        width: 100%;
+        display: block;
+      }
+      .publication{
+        margin-left: 0px;
+        display: block;
+    }
+    .publication .B{
+        display: block;
+    }
+}
