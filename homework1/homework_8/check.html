@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <style>
+        input{
+            display: none;
+        }
+        
+        .first input+label::before{
+            content: '';
+            background: url('smileys.png') no-repeat -49px -52px;
+            width: 28px;
+            height: 22px;
+            position: absolute;
+           
+
+        }
+        .first input:checked+label::before{
+            content: '';
+            background: url('smileys.png') no-repeat 7px -52px;
+            width: 35px;
+            height: 27px;
+            position: absolute;
+           
+
+        }
+       form{
+            position: relative;
+        }
+        span{
+            margin-left: 40px;
+        }
+        .first input+label::after{
+            content: 'Нажми на смайлик';
+           color: blue;
+            position: absolute;
+            margin-left: 30px;
+           
+
+        }
+        .first input:checked+label::after{
+            content: 'Нажми на смайлик';
+           color: red;
+            position: absolute;
+            margin-left: 30px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#" class="first">
+        <input type="checkbox" id="check">
+        <label for="check"></label>
+    </form>
+    
+</body>
+</html>
