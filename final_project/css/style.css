@@ -1174,7 +1174,7 @@ video {
 	text-align: center;
 }
 /*Media*/
-@media all and (max-width:700px) {
+@media all and (max-width:800px) {
 	
 	.garagedoor a {
 		font-size: 25px ;
