@@ -164,12 +164,7 @@ body {
 	clear: both;
 }
 
-.video {
-    position: absolute;
-    top: 74px;
-    left: 30px;
-   
-}
+
 .container{
 	display: flex;
   }
