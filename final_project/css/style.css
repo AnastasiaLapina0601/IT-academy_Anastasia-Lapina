@@ -115,22 +115,16 @@ body {
 .textmain {
     padding: 10px 10px 10px 10px;
     margin: -3px 0px -3px -3px;
-    border: 20px solid #7a92e2b3;
-	display: flex;
 	flex-basis: 250px;
 	flex-direction: column-reverse;
+	border: 20px solid #d7e1eb;
+	background-color:#d7e1eb ;
 }
 .textmain ul li img{
 	display: flex;
 }
 .bordermain, .Porto {
     margin: 50px 40px;
-}
- .textmain{
-	padding: 10px 10px 10px 10px;
-    margin: -3px -4px -3px -3px;
-    border: 20px solid #d7e1eb;
-	background-color:#d7e1eb ;
 }
 .clear{
 	clear: both;
